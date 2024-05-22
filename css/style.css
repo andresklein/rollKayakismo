@@ -1,0 +1,540 @@
+.fp-watermark {
+  display: none;
+  }
+
+  .checked {
+    color: orange;
+  }
+  
+  [data-aos][data-aos][data-aos="fade-right"]{
+    transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
+}
+[data-aos][data-aos][data-aos="fade-left"]{
+  transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
+}
+[data-aos][data-aos][data-aos="fade-down"]{
+  transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
+}
+[data-aos][data-aos][data-aos="fade-up"]{
+  transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
+}
+[data-aos][data-aos][data-aos-duration="1000"]{
+  transition-duration: 5s;
+}
+[data-aos^=fade-right]{
+  opacity: 6;
+  transition-property: opacity, transform;
+}
+
+  body{   
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 8%;
+  height: 100%;
+  overflow-x: hidden;
+  }
+
+  [data-anchor="issue1"] {
+    background-image: url("https://www.baring.com.ar/resources/original/kayak-rosario-capital.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 8%;
+    filter:grayscale(50%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .section[data-anchor="issue2"] {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 10px;
+  }
+  .section[data-anchor="issue2"] .image-5,
+  .section[data-anchor="issue2"] .image-6 {
+    margin: 5px;
+  }
+.section[data-anchor="issue2"] .image-5 p {
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 200;
+  font-style: inherit;
+  font-size: 20px;
+  font-weight: 300;
+  left: 10px;
+}
+.section[data-anchor="issue2"] .image-5 a {
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-weight: 200;
+  font-style: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  left: 10px;
+  text-align: start;
+  margin-top: 5px;
+}
+
+  [data-anchor="issue3"] {
+    background-image: url("");
+    filter: grayscale(10%);
+  }
+  .section[data-anchor="issue3"] .image-1 img,
+  .section[data-anchor="issue3"] .image-2 img,
+  .section[data-anchor="issue3"] .image-3 img,
+  .section[data-anchor="issue3"] .image-4 img,
+  .section[data-anchor="issue3"] .image-8 img {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+  [data-anchor="issue4"] {
+    background-image: url("#");
+  }
+
+
+  #fullpage {
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+  }
+  .cover {
+    display: flex;
+    justify-content: space-between;
+    overflow: cover;
+    position: relative;
+    align-items: stretch;
+  }
+
+  .text-over-images {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 9999;
+}
+  
+  .image-5 img, .image-6 img {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  height: 98vh;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  filter: brightness(100%);
+  }
+  .image-5 img:hover, .image-6 img:hover {
+    filter: brightness(50%);
+  }
+
+  .image-5::before,
+  .image-6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, #efece3, rgba(255, 255, 255, 0));
+  pointer-events: none;
+  z-index: 1;
+}
+
+  .image-5 a, .image-5 p {
+  opacity: 0;
+  color: black;
+  transition: opacity 0.3s ease-in-out;
+  }
+  .image-5:hover p,
+  .image-5:hover a {
+  opacity: 1;
+}
+
+
+.image-1 img, .image-2 img, .image-3 img, .image-4 img, .image-8 img {
+  transition: all 0.6s ease;
+  cursor: pointer;
+}
+.image-1 img:hover, .image-2 img:hover, .image-3 img:hover, .image-4 img:hover, .image-8 img:hover {
+  transform: scale(1.05);
+  animation: shake 0.2s linear 1;
+}
+.image-1 , .image-2 , .image-3 , .image-4 , .image-8  {
+  background-color: rgb(236, 236, 236);
+  margin: 10px;
+  border-radius: 6px 6px 0 0;
+}
+
+  .section {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 200;
+    font-style: inherit;
+    text-align:center;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section p {
+    position: relative;
+    top: 80px;
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .word-container {
+    justify-content: center;
+    position: relative;
+    top: 70px;
+    align-items: center;
+  }
+  .words {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .word-p {
+    margin: 0 10px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: 100;
+    font-size: 0.8em;
+  }
+  .word{
+    margin: 0 10px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: bold;
+    font-size: 0.5em;
+    display: inline-block;
+    background-color: transparent;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+  }
+  .word:hover{
+    color: whitesmoke;
+    }
+
+  .word-caption {
+    z-index: 999;
+  }
+
+  .card {
+    position: relative;
+    padding-bottom: 15px;
+    padding-top: 0%;
+    border-radius: 5px 5px 5px 5px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: #fff;
+  }
+  .borde-card {
+    border: none;
+  }
+
+  .card-text {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: bolder;
+  }
+  .descripcion {
+    font-size: 11px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4px;
+    margin-top: 5px;
+  }
+  .precio {
+    font-size: 15px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: bold;
+    display: flex;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .precio-descrip {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: 300;
+    font-size: 11px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: grey;
+    margin-left: 5px;
+  }
+
+  .reviews {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+  }
+  .reviews .fa-star {
+    font-size: 10px;
+    margin-right: 4px;
+  }
+  .reviews a {
+    font-size: 10px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: bolder;
+  }
+  .stock {
+    display: flex;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    font-size: 11px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: bold;
+    color: #a1cc16;
+  }
+
+  .tallas {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.25rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    width: auto;
+    font-size: 11px;
+  }
+  .tallas .talla {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .tallas .talla input {
+    display: none;
+  }
+  
+  .tallas .talla .letra {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    display: flex;
+    font-weight: bolder;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem;
+    height: 15px;
+    transition: all .15s ease-in-out;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  
+  .tallas .talla input:checked + .letra {
+    background-color: #a1cc16;
+    color: whitesmoke;
+    font-weight: 600;
+    transform: scale(1.2);
+  }
+  .tallas .talla .letra:hover {
+    background-color: #a1cc16;
+    transform: scale(1.2);
+    color: whitesmoke;
+}
+
+.button {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  margin: 0px auto;
+  margin-top: 10px;
+  border: 1px solid grey;
+  border-radius: 0px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
+}
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+.button .button__text {
+  transform: translateX(22px);
+  color: #111;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-style: inherit;
+  font-size: 14px;
+  font-weight: 400;
+}
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 33px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.button .svg {
+  width: 25px;
+  stroke: #a1cc16;
+}
+.button:hover {
+  background: #fff;
+}
+.button:hover .button__text {
+  color: transparent;
+}
+.button:hover .button__icon {
+  width: 141px;
+  transform: translateX(0);
+}
+.button:active .button__icon {
+  background-color: #fff;
+}
+.button:active {
+  border: 1px solid #fff;
+}
+
+  .exclusivo {
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+    font-weight: bold;
+    width: 50%;
+    font-size: 10px;
+    top: 7px;
+    left: 7px;
+    position: absolute;
+    color: #a1cc16;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+.header-txt h1, 
+.header-txt ul li a,
+.header-txt ul li a button{
+  font-family: "Encode Sans Expanded", sans-serif;
+    font-style: inherit;
+  font-weight: 100;
+  text-decoration: none;
+  color: #111;
+  font-size: 15px;
+}
+.header-txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+.header-txt.scrolled{
+  transform: translatey(-20px);
+}
+.header-txt h1 {
+  margin: 0;
+}
+.header-txt ul {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+.header-txt ul li {
+margin-left: 10px;
+}
+
+#button-link {
+  outline: 0 !important;
+  border: 0 !important;
+  background-color: transparent;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+#button-link:hover{
+transform: translateY(-3px);
+color: whitesmoke;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -25px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 250px 1px;
+  transition: 0.7s;
+  z-index: 10;
+}
+.menu .navbar2 ul {
+  list-style-type: none;
+}
+.menu .navbar2 ul li a {
+  padding: 8px;
+  color: black;
+  fill: white;
+  display: block;
+  transition: all 0.5s;
+}
+.menu .navbar2 ul li a:hover {
+  transform: scale(1.2);
+  color: whitesmoke;
+}
+
+
+.footer-content .link ul li{
+  list-style: none;
+  display: inline-block;
+}
+.footer-content .link ul li a {
+  text-decoration: none;
+  font-family: "Encode Sans Expanded", sans-serif;
+  font-style: inherit;
+  font-weight: 100;
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 12px;
+}
+.footer-content .link ul.left {
+  float: left;
+}
+.footer-content .link ul.right {
+  float: right;
+}
+
+@keyframes shake {
+  0% {
+    rotate: 0deg;
+  }
+
+  33% {
+    rotate: 10deg;
+  }
+
+  66% {
+    rotate: -10deg;
+  }
+
+  100% {
+    rotate: 10deg;
+  }
+}
